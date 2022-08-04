@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos - Flex basis</title>
+  <style>
+    .container{
+      display: flex;
+      border: 2px solid black;
+      max-width: 300px;
+    }
+    .item{
+      background-color: orange;
+      margin: 5px;
+      text-align: center;
+      color: white;
+    }
+    .bauto{
+      flex-basis: auto;
+    }
+    .b-0{
+      flex-basis: 0;
+    }
+    .fg-1{
+      flex-grow: 1;
+    }
+    .fg-2{
+      flex-grow: 2;
+    }
+  </style>
+</head>
+<body>
+  <h2>Flex-grow-0</h2>
+  <div class="container">
+    <div class="item bauto fg-1">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+  </div>
+
+  <h2>Flex-grow-0 Basis 0</h2>
+  <div class="container">
+    <div class="item b-0 fg-1">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+  </div>
+</body>
+</html>
