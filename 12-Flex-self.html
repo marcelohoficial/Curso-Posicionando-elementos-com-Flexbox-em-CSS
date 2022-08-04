@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos - Align Self</title>
+  <style>
+    .container{
+      display: flex;
+      border: 2px solid black;
+      margin-bottom: 10px;
+      max-width: 350px;
+    }
+    .align-container{
+      align-items: center;
+    }
+    .column{
+      flex-direction: column;
+    }
+    .item{
+      background-color: orange;
+      color: white;
+      font-size: 24px;
+      text-align: center;
+      margin: 5px;
+    }
+    .center{
+      align-self: center;
+    }
+    .start{
+      align-self: start;
+    }
+    .end{
+      align-self: flex-end;
+    }
+    .baseline{
+      align-self: baseline;
+    }
+    .stretch{
+      align-self: stretch;
+    }
+    .auto{
+      align-self: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>Row</h1>
+  <section class="container align-container">
+    <div class="item auto">aaa</div>
+    <div class="item auto">BBB</div>
+    <div class="item auto">CCC</div>
+    <div class="item auto">. Richard McClintock, a Latin professor</div>
+    <div class="item auto">EEEE</div>
+    <div class="item auto">FFFF</div>
+  </section>
+  <section class="container">
+    <div class="item stretch">aaa</div>
+    <div class="item start">BBB</div>
+    <div class="item center">CCC</div>
+    <div class="item auto">. Richard McClintock, a Latin professor</div>
+    <div class="item end">EEEE</div>
+    <div class="item auto">FFFF</div>
+  </section>
+
+  <h1>Column</h1>
+  <section class="container align-container column">
+    <div class="item auto">aaa</div>
+    <div class="item auto">BBB</div>
+    <div class="item auto">CCC</div>
+    <div class="item auto">. Richard McClintock, a Latin professor</div>
+    <div class="item auto">EEEE</div>
+    <div class="item auto">FFFF</div>
+  </section>
+  <section class="container column">
+    <div class="item stretch">aaa</div>
+    <div class="item start">BBB</div>
+    <div class="item center">CCC</div>
+    <div class="item auto">. Richard McClintock, a Latin professor</div>
+    <div class="item end">EEEE</div>
+    <div class="item auto">FFFF</div>
+  </section>
+</body>
+</html>
